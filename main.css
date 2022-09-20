@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(45, 43, 43);
+  color: antiquewhite;
+}
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  margin-left: 20px;
+}
+#new-task-form {
+  display: flex;
+}
+#new-task-input {
+  flex: 1 1 0%;
+  padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+}
+#new-task-submit {
+  color: rgb(74, 60, 60);
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  background-color: palevioletred;
+  border-radius: 1rem;
+}
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(53, 44, 61);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+#tasks .task .content {
+  flex: 90%;
+}
+#tasks .task .content .text {
+  padding: 0.75rem;
+  width: 95%;
+  border-radius: 1rem;
+}
+#tasks .task .actions {
+  flex: 10%;
+  display: flex;
+  margin: 0 -0.5rem;
+}
+.task .actions button {
+  margin: 0 0.5rem;
+  font-size: 1, 25rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+.task .actions button:hover {
+  color: antiquewhite;
+}
